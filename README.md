@@ -37,7 +37,7 @@ To run this project locally, follow these steps:
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/blogging-website.git`
+1. Clone the repository: `git clone https://github.com/Prayash-Bhuria/Blogging-Website.git`
 2. Navigate to the project directory: `cd blogging-website`
 3. Install dependencies: `npm install`
 4. Start the application: `npm start`
