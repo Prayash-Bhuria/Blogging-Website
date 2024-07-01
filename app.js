@@ -1,7 +1,7 @@
 
 const path = require("path");
 const express = require("express");
-const mongoose = require("mongoose");
+const { connectToMongoDB } = require("./connect");
 const cookiePaser = require("cookie-parser");
 
 
@@ -18,8 +18,9 @@ const {
 const app = express();
 const PORT = 8000;
 
-mongoose.connect("mongodb://localhost:27017/blogify").then(e=>console.log('Mongodb Connected'))
-
+connectToMongoDB("mongodb+srv://prayashbhuria931:helloatlas@cluster0.zdpw6cg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(() =>
+  console.log("Mongodb connected")
+);
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
